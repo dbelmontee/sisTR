@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>sisEA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<h:outputStylesheet library="css" name="style.css"></h:outputStylesheet>  
+</h:head>
+<h:body>
+	<div class="main">
+		<h:form id="formTopo">
+			<div class="header">
+				<ui:include src="/content/templates/header.xhtml" />
+			</div>
+
+			<div class="menu">
+				<ui:include src="/content/templates/menu.xhtml" />
+			</div>
+		</h:form>
+		<div class="content">
+			<ui:insert name="corpo"/>
+		</div>
+
+		<div class="footer">
+			<ui:include src="/content/templates/footer.xhtml" />
+		</div>
+	</div>
+</h:body>
+</html>

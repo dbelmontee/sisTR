@@ -1,0 +1,15 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+		<p:menubar autoDisplay="false">
+			<p:menuitem value="Home" icon="ui-icon-home" action="/content/index.xhtml" ajax="false"/>
+			<p:submenu label="Criar TR" icon="ui-icon-pencil">
+				<p:menuitem value="Material"/>
+				<p:menuitem value="Serviço"/>
+			</p:submenu>
+			<p:menuitem value="Sair" icon="ui-icon-	ui-icon-extlink" action="#{loginBean.loggout}" ajax="false"/>
+		</p:menubar>
+</ui:composition>
